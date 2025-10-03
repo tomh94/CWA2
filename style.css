@@ -9,22 +9,29 @@
 body{
     padding: 30px;
 }
-#header{
+
+/*header */
+
+#header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: rgba(128, 128, 128, 0.23) 1px solid;
     border-top: rgba(128, 128, 128, 0.23) 1px solid;
-    #logo{
+
+    #logo {
         width: 75px;
     }
-    ul{
+
+    ul {
         display: flex;
         justify-content: space-between;
         width: 500px;
-        li{
+
+        li {
             list-style: none;
-            a{
+
+            a {
                 text-decoration: none;
                 color: #2c2b2b;
                 font-size: 20px;
@@ -32,24 +39,37 @@ body{
             }
         }
     }
-    #profile{
+
+    #profile {
         display: flex;
         align-items: center;
         justify-content: center;
-        #star{
+
+        #star {
             max-width: 18px;
         }
-        p{
+
+        p {
             font-weight: bold;
         }
 
-        #date{
+        #date {
             color: gray;
         }
-        #profile-picture{
+
+        #profile-picture {
             max-width: 50px;
         }
     }
-
 }
+/*hero */
+
+#hero-section {
+    display: flex;
+}
+
+
+
+
+
 
