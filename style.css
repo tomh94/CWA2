@@ -69,6 +69,31 @@ body{
 
 #hero-section {
     display: flex;
+    justify-content: center;
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        #socials-div{
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: left;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                border: black solid 2px;
+                border-radius: 25px;
+                width: 35px;
+                height: 35px;
+                }
+            #line{
+                border: black solid 2px;
+            }
+        }
+    }
     #hero-h1 {
         display: flex;
         text-align: right;
