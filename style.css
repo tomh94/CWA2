@@ -36,12 +36,14 @@ body{
 
         li {
             list-style: none;
-
             a {
                 text-decoration: none;
                 color: #2c2b2b;
                 font-size: 20px;
                 font-weight: 600;
+            }
+            a:hover {
+                color:
             }
         }
     }
@@ -95,7 +97,7 @@ body{
             margin-top: 40px;
             font-size: 25px;
             font-weight: bold;
-            animation: slideRight 2s ease-in-out;
+            animation: slide-in-left 2s ease-in-out;
         }
     }
 
@@ -269,7 +271,7 @@ img[src="/photos/circle.png"]:hover {
 
 @keyframes slideRight {
     0% {
-        transform: translateX(-100px);
+        transform: translateX(-300px);
     }
     100% {
         transform: translateX(0);
