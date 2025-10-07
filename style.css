@@ -8,6 +8,7 @@
     font-family: '', sans-serif;
     text-align: right;
     justify-content: right;
+    zoom: 0.98;
 }
 body{
     display: flex;
@@ -183,7 +184,7 @@ body{
                 max-width: 600px;
                 min-width: 600px;
                 position: relative;
-                top: 107px;
+                top: 122px;
                 animation: slide-in-left 2s ease-in-out
             }
 
@@ -228,7 +229,6 @@ body{
         span{
             padding: 0 30px;
             border-radius: 25px;
-            animation: sliding 5s ease-in-out infinite;
         }
     }
     div{
@@ -245,7 +245,7 @@ body{
         justify-self: center;
         width: 1000px;
         position: relative;
-        bottom: 883px;
+        bottom: 840px;
         animation: slide 3s ease-in-out infinite;
     }
 }
@@ -311,4 +311,3 @@ body{
         transform:rotate(360deg);
     }
 }
-
