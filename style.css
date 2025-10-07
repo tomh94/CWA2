@@ -37,13 +37,14 @@ body{
         li {
             list-style: none;
             a {
+                display: inline-block;
                 text-decoration: none;
                 color: #2c2b2b;
                 font-size: 20px;
                 font-weight: 600;
             }
             a:hover {
-                color:
+                animation: hover 2s alternate ease-in-out infinite;
             }
         }
     }
@@ -262,6 +263,10 @@ img[src="/photos/circle.png"]:hover {
     animation: rotate-360 2s ease-in-out
 }
 
+@keyframes hover {
+    0% {color: #F7C069FF; transform: scale(1);}
+    100% {color: #e89440; transform: scale(1.1);}
+}
 
 @keyframes slide {
     0% { transform: translateX(0); }
