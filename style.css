@@ -89,11 +89,13 @@ body{
             font-size: 220px;
             line-height: 0.8;
             font-family: 'Archivo Black', sans-serif;
+            animation: slideRight 2s ease-in-out;
         }
         p{
             margin-top: 40px;
             font-size: 25px;
             font-weight: bold;
+            animation: slideRight 2s ease-in-out;
         }
     }
 
@@ -103,6 +105,7 @@ body{
         flex-direction: row;
         align-items: start;
         justify-content: left;
+        animation: slideRight 2s ease-in-out;
         a {
             display: flex;
             align-items: center;
@@ -171,7 +174,9 @@ body{
             padding: 20px;
             border-radius: 50%;
         }
-
+        svg:hover {
+            animation: rotate-360 2s ease-in-out
+        }
         #main-image-div {
             margin-top: 50px;
             min-width: 800px;
@@ -205,8 +210,11 @@ body{
                 width: 105px;
                 height: 105px;
             }
-
+            svg:hover {
+                animation: rotate-360 2s ease-in-out
+            }
         }
+
     }
 }
 /*black section*/
@@ -248,10 +256,24 @@ body{
 }
 /* animations */
 
+img[src="/photos/circle.png"]:hover {
+    animation: rotate-360 2s ease-in-out
+}
+
+
 @keyframes slide {
     0% { transform: translateX(0); }
     50% { transform: translateX(100px); }
     100% { transform: translateX(0); }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 @keyframes sliding {
     0% {
@@ -279,7 +301,7 @@ body{
     0% { transform: translateX(500px); }
     100% { transform: translateX(0); }
 }
-@keyframes turn-360{
+@keyframes rotate-360{
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}
 }
