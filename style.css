@@ -122,6 +122,12 @@ body{
             margin-right: -8px;
             font-size: 20px;
         }
+        a:hover {
+            color: #e89440;
+            transition: 1s;
+            border: #e89440 solid 2px;
+            }
+
         hr {
             border-top: 1px solid #dedcdc;
             margin: 20px 0 0 8px;
