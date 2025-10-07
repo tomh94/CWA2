@@ -232,6 +232,7 @@ body{
     padding: 0 40px;
     background: #000000;
     max-height: 1116px;
+    overflow: hidden;
     h3{
         display: flex;
         justify-content: center;
